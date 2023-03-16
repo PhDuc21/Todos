@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>todo list</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="main.js" defer></script>
+
+  <style>
+    .completed{
+    text-decoration: line-through;
+    }
+  </style>
+
+</head>
+<body class="h-[100%] bg-gradient-to-r from-yellow-300 to-green-500 font-sans">
+  <p id="title" class="text-center text-[100px] text-[#ead7d7]">Todo List</p>
+  <div class="container w-[400] m-[100] m-auto bg-white pt=[10px] rounded-md overflow-hidden">
+    <form action="" class="border-solid border-b border-slate-600 pl-[20px] pr-[20px] text-base flex justify-between">
+      <input type="text" class="text-[24px] w-[100%] mr-[15px] rounded-none outline-0"
+        placeholder="What needs to be done?">
+    </form>
+    <ul class="todos list-none"></ul>
+    <div class="bg-white w-full px-[20px] py-4 grid grid-cols-[1fr_2fr_1fr] shadow-xl">
+      <span id="count">1 item left</span>
+      <ul data-todo="filters" class="flex justify-center">
+        <li class="px-[20px]">
+          <a class="checked p-2" href="#/">All</a>
+        </li>
+        <li class="px-[20px]">
+          <a href="#/active" class="p-2">Active</a>
+        </li>
+        <li class="px-[20px]">
+          <a href="#/completed" class="p-2">Completed</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
